@@ -70,6 +70,10 @@ class MainActivity : AppCompatActivity() {
                 players_who_lost.setTextColor(Color.RED)
                 player_1_Health_Text.setTextColor(Color.RED)
                 player_2_lost.setText("");
+                player_1_minus5.isEnabled = false;
+                player_1_Add5.isEnabled = false;
+                player_1_Minus1.isEnabled = false;
+                player_1_Add.isEnabled = false;
             }
             player_1_Health_Text.setText("Player 1's Health = $player_1_Health")
 
@@ -87,6 +91,10 @@ class MainActivity : AppCompatActivity() {
                 player_1_Health_Text.setTextColor(Color.RED)
                 players_who_lost.setTextColor(Color.RED)
                 player_2_lost.setText("");
+                player_1_minus5.isEnabled = false;
+                player_1_Add5.isEnabled = false;
+                player_1_Minus1.isEnabled = false;
+                player_1_Add.isEnabled = false;
             }
             player_1_Health_Text.setText("Player 1's Health = $player_1_Health")
 
@@ -107,6 +115,10 @@ class MainActivity : AppCompatActivity() {
                 players_who_lost.setTextColor(Color.RED)
                 player_2_Health_Text.setTextColor(Color.RED)
                 players_who_lost.setText("");
+                player_2_minus5.isEnabled = false;
+                player_2_Minus1.isEnabled = false;
+                player_2_Add.isEnabled = false;
+                player_2_Add5.isEnabled = false;
             }
             player_2_Health_Text.setText("Player 2's Health = $player_2_Health")
 
@@ -124,6 +136,10 @@ class MainActivity : AppCompatActivity() {
                 player_2_lost.setTextColor(Color.RED)
                 player_2_Health_Text.setTextColor(Color.RED)
                 players_who_lost.setText("");
+                player_2_minus5.isEnabled = false;
+                player_2_Minus1.isEnabled = false;
+                player_2_Add.isEnabled = false;
+                player_2_Add5.isEnabled = false;
             }
             player_2_Health_Text.setText("Player 2's Health = $player_2_Health")
 
@@ -142,6 +158,10 @@ class MainActivity : AppCompatActivity() {
                 player_3_text.setText("Player 3 Lost and is elimanted ")
                 player_3_text.setTextColor(Color.RED)
                 players_who_lost.setText("");
+                player_3_Add.isEnabled = false;
+                player_3_Minus1.isEnabled = false;
+                player3_Add_5.isEnabled = false;
+                player_3_Add.isEnabled = false;
             }
             player_3_text.setText("Player 3's Health = $player_3_Health")
 
@@ -162,6 +182,11 @@ class MainActivity : AppCompatActivity() {
                 player_3_text.setTextColor(Color.RED)
                 player_3_text.setText("");
                 player_3_text.setText("Elimaninted")
+                player_3_Add.isEnabled = false;
+                player_3_Minus1.isEnabled = false;
+                player3_Add_5.isEnabled = false;
+                player_3_Add.isEnabled = false;
+                player3_Minus_5.isEnabled = false;
             }
             player_3_text.setText("Player 3's Health = $player_3_Health")
 
