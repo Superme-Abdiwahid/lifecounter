@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/player_3_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="221dp"
+        android:layout_y="331dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Players 3's Health = 20 " />
+
+    <TextView
+        android:id="@+id/player_3"
+        android:layout_width="233dp"
+        android:layout_height="129dp"
+        android:layout_x="3dp"
+        android:layout_y="295dp"
+        android:text="Player 3's Status"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <Button
+        android:id="@+id/player_3_Add1"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="125dp"
+        android:layout_y="383dp"
+        android:text="+ 1"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/player_3_Minus1"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="61dp"
+        android:layout_y="385dp"
+        android:text="-1"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/player_3_Add5"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_x="1dp"
+        android:layout_y="383dp"
+        android:text="+5"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <TextView
+        android:id="@+id/player_2textView"
+        android:layout_width="233dp"
+        android:layout_height="129dp"
+        android:layout_x="1dp"
+        android:layout_y="153dp"
+        android:text="Player 2's Status"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/player5_lost"
+        android:layout_width="224dp"
+        android:layout_height="80dp"
+        android:layout_x="48dp"
+        android:layout_y="691dp" />
+
+    <TextView
+        android:id="@+id/player4_lost"
+        android:layout_width="224dp"
+        android:layout_height="80dp"
+        android:layout_x="50dp"
+        android:layout_y="515dp" />
+
+    <TextView
+        android:id="@+id/player3_lost"
+        android:layout_width="224dp"
+        android:layout_height="80dp"
+        android:layout_x="51dp"
+        android:layout_y="611dp" />
+
+    <TextView
+        android:id="@+id/player2_lost"
+        android:layout_width="224dp"
+        android:layout_height="80dp"
+        android:layout_x="47dp"
+        android:layout_y="424dp" />
+
+    <Button
+        android:id="@+id/player_3_Minus5"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="185dp"
+        android:layout_y="383dp"
+        android:text="-5"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="221dp"
+        android:layout_y="167dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Players 2's Health = 20 " />
+
+    <Button
+        android:id="@+id/player_1_Add1"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="116dp"
+        android:layout_y="88dp"
+        android:text="+ I"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/Player_1_Add5"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_x="0dp"
+        android:layout_y="87dp"
+        android:text="+5"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/Player_1_Minus1"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="59dp"
+        android:layout_y="88dp"
+        android:text="-1"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/Player_1_Minus5"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="174dp"
+        android:layout_y="88dp"
+        android:text="-5"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="233dp"
+        android:layout_height="129dp"
+        android:layout_x="1dp"
+        android:layout_y="2dp"
+        android:text="Player 1's Status"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+
+    <Button
+        android:id="@+id/player_2_Add1"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="120dp"
+        android:layout_y="240dp"
+        android:text="+ 1"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/Player_2_Add5"
+        android:layout_width="52dp"
+        android:layout_height="38dp"
+        android:layout_x="1dp"
+        android:layout_y="238dp"
+        android:text="+5"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="131dp" />
+
+    <Button
+        android:id="@+id/Player_2_Minus1"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="61dp"
+        android:layout_y="239dp"
+        android:text="-1"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/Player_2_Minus5"
+        android:layout_width="49dp"
+        android:layout_height="36dp"
+        android:layout_x="179dp"
+        android:layout_y="241dp"
+        android:text="-5"
+        tools:layout_editor_absoluteX="217dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <TextView
+        android:id="@+id/Player_2textView"
+        android:layout_width="233dp"
+        android:layout_height="129dp"
+        android:layout_x="1dp"
+        android:layout_y="152dp"
+        android:text="Player 2's Status"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="202dp"
+        android:layout_y="33dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Players 1's Health = 20 " />
+
+    <TextView
+        android:id="@+id/player1_lost"
+        android:layout_width="224dp"
+        android:layout_height="80dp"
+        android:layout_x="49dp"
+        android:layout_y="422dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="13dp"
+        android:layout_y="476dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_x="383dp"
+        android:layout_y="413dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+
+</AbsoluteLayout>
+
