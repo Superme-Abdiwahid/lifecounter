@@ -10,7 +10,8 @@ import android.widget.TextView
 class MainActivity : AppCompatActivity() {
     private var player_1_Health = 20;
     private var player_2_Health = 20;
-    private var player_3_Health = 30;
+    private var player_3_Health = 20;
+    private var player_4_Health = 20;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         var player_1_Add5: Button = findViewById<Button>(R.id.Player_1_Add5)
 
-        var player_1_Health_Text: EditText = findViewById<EditText>(R.id.editTextTextPersonName)
+        var player_1_Health_Text: TextView = findViewById<TextView>(R.id.editTextTextPersonName)
 
         var player_1_minus5: Button = findViewById<Button>(R.id.Player_1_Minus5)
 
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
 
         var player_2_Add5: Button = findViewById<Button>(R.id.Player_2_Add5)
 
-        var player_2_Health_Text: EditText = findViewById<EditText>(R.id.editTextTextPersonName2)
+        var player_2_Health_Text: TextView = findViewById<TextView>(R.id.editTextTextPersonName2)
 
         var player_2_minus5: Button = findViewById<Button>(R.id.Player_2_Minus5)
 
@@ -54,6 +55,23 @@ class MainActivity : AppCompatActivity() {
         var player3_Minus_5: Button = findViewById<Button>(R.id.player_3_Minus5)
 
         var player_3_text: TextView = findViewById<TextView>(R.id.player_3_text)
+
+
+
+
+
+
+        var Player_4_Add: Button = findViewById<Button>(R.id.player_4_Add)
+
+        var player_4_Add5: Button = findViewById<Button>(R.id.player_4_Add5)
+
+        var player_4_minus1: Button = findViewById<Button>(R.id.player_4_Minus)
+
+        var player_4_minus5: Button = findViewById<Button>(R.id.player_4_Minus5)
+
+        var player_4_Health_Text: TextView = findViewById<TextView>(R.id.player_4_health_text)
+
+
 
 
 
@@ -136,6 +154,8 @@ class MainActivity : AppCompatActivity() {
                 player_2_lost.setTextColor(Color.RED)
                 player_2_Health_Text.setTextColor(Color.RED)
                 players_who_lost.setText("");
+                players_who_lost.setText("Player 2 Lost and is elimanted ");
+                players_who_lost.setTextColor(Color.RED);
                 player_2_minus5.isEnabled = false;
                 player_2_Minus1.isEnabled = false;
                 player_2_Add.isEnabled = false;
@@ -191,6 +211,71 @@ class MainActivity : AppCompatActivity() {
             player_3_text.setText("Player 3's Health = $player_3_Health")
 
         }
+
+
+
+
+
+
+        Player_4_Add.setOnClickListener(){
+            player_4_Health++;
+            player_4_Health_Text.setText("Player 4s Health = $player_4_Health")
+        }
+
+        player_4_minus1.setOnClickListener(){
+            player_4_Health--;
+            if(player_4_Health <= 0){
+             //   player_3_text.setText("Player 3 Lost and is elimanted ")
+              //  player_3_text.setTextColor(Color.RED)
+                players_who_lost.setText("");
+                Player_4_Add.isEnabled = false;
+                player_4_minus1.isEnabled = false;
+                player_4_Add5.isEnabled = false;
+                player_4_minus5.isEnabled = false;
+            }
+            player_4_Health_Text.setText("Player 4's Health = $player_4_Health")
+
+        }
+        player_4_Add5.setOnClickListener() {
+            player_4_Health += 5;
+            player_4_Health_Text.setText("Player 4's Health = $player_4_Health")
+
+        }
+
+        player_4_minus5.setOnClickListener(){
+            player_4_Health -= 5;
+            if(player_4_Health <= 0){
+                players_who_lost.setText("");
+                players_who_lost.setTextColor(Color.RED)
+                player_2_lost.setText("")
+                player_4_Health_Text.setText("Player 4 Lost and is elimanted")
+                players_who_lost.setText("")
+                players_who_lost.setText("Player 4 Lost and is elimanted")
+                player_4_Health_Text.setTextColor(Color.RED)
+            //    player_3_text.setText("");
+                player_4_Health_Text.setText("Elimaninted")
+                player_4_Add5.isEnabled = false;
+                player_4_minus1.isEnabled = false;
+                player_4_minus5.isEnabled = false;
+                Player_4_Add.isEnabled = false;
+            }
+            player_4_Health_Text.setText("Player 4's Health = $player_4_Health")
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

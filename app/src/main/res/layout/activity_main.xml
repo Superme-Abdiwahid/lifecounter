@@ -1,12 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
-    <EditText
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/player_5_health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_x="228dp"
+            android:layout_y="602dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Players 5s Health = 20 " />
+
+        <Button
+            android:id="@+id/player_4_Minus3"
+            android:layout_width="49dp"
+            android:layout_height="36dp"
+            android:layout_x="191dp"
+            android:layout_y="678dp"
+            android:text="-5"
+            tools:layout_editor_absoluteX="217dp"
+            tools:layout_editor_absoluteY="133dp" />
+
+        <TextView
+            android:id="@+id/player_5"
+            android:layout_width="233dp"
+            android:layout_height="129dp"
+            android:layout_x="0dp"
+            android:layout_y="425dp"
+            android:text="Player 4's Status"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="48dp" />
+
+        <TextView
         android:id="@+id/player_4_health_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,18 +50,48 @@
         android:inputType="textPersonName"
         android:text="Players 4's Health = 20 " />
 
-    <TextView
-        android:id="@+id/player_4"
-        android:layout_width="233dp"
-        android:layout_height="129dp"
-        android:layout_x="0dp"
-        android:layout_y="425dp"
-        android:text="Player 4's Status"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="48dp" />
+        <TextView
+            android:id="@+id/player_4"
+            android:layout_width="233dp"
+            android:layout_height="129dp"
+            android:layout_x="6dp"
+            android:layout_y="588dp"
+            android:text="Player 5's Status"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="48dp" />
 
-    <Button
-        android:id="@+id/player_3_Minus3"
+        <Button
+            android:id="@+id/player_5_Add"
+            android:layout_width="49dp"
+            android:layout_height="36dp"
+            android:layout_x="133dp"
+            android:layout_y="678dp"
+            android:text="+ 1"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="133dp" />
+
+        <Button
+            android:id="@+id/player_5_Minus"
+            android:layout_width="49dp"
+            android:layout_height="36dp"
+            android:layout_x="68dp"
+            android:layout_y="680dp"
+            android:text="-1"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="133dp" />
+
+        <Button
+            android:id="@+id/player_5_Add5"
+            android:layout_width="52dp"
+            android:layout_height="38dp"
+            android:layout_x="6dp"
+            android:layout_y="678dp"
+            android:text="+5"
+            tools:layout_editor_absoluteX="34dp"
+            tools:layout_editor_absoluteY="131dp" />
+
+        <Button
+        android:id="@+id/player_4_Minus5"
         android:layout_width="49dp"
         android:layout_height="36dp"
         android:layout_x="188dp"
@@ -37,7 +101,7 @@
         tools:layout_editor_absoluteY="133dp" />
 
     <Button
-        android:id="@+id/player_3_Add"
+        android:id="@+id/player_4_Add"
         android:layout_width="49dp"
         android:layout_height="36dp"
         android:layout_x="131dp"
@@ -66,14 +130,14 @@
         tools:layout_editor_absoluteX="34dp"
         tools:layout_editor_absoluteY="131dp" />
 
-    <TextView
-        android:id="@+id/player2_lost"
-        android:layout_width="224dp"
-        android:layout_height="80dp"
-        android:layout_x="72dp"
-        android:layout_y="682dp" />
+        <TextView
+            android:id="@+id/player2_lost"
+            android:layout_width="224dp"
+            android:layout_height="80dp"
+            android:layout_x="64dp"
+            android:layout_y="801dp" />
 
-    <EditText
+        <TextView
         android:id="@+id/player_3_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -143,7 +207,7 @@
         tools:layout_editor_absoluteX="217dp"
         tools:layout_editor_absoluteY="133dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextTextPersonName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -254,7 +318,7 @@
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="48dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -264,13 +328,14 @@
         android:inputType="textPersonName"
         android:text="Players 1's Health = 20 " />
 
-    <TextView
-        android:id="@+id/player1_lost"
-        android:layout_width="224dp"
-        android:layout_height="80dp"
-        android:layout_x="85dp"
-        android:layout_y="585dp" />
+        <TextView
+            android:id="@+id/player1_lost"
+            android:layout_width="224dp"
+            android:layout_height="80dp"
+            android:layout_x="57dp"
+            android:layout_y="720dp" />
+    </AbsoluteLayout>
+</ScrollView>
 
 
-</AbsoluteLayout>
 
