@@ -6,12 +6,14 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     private var player_1_Health = 20;
     private var player_2_Health = 20;
     private var player_3_Health = 20;
     private var player_4_Health = 20;
+    private var player_5_Health = 20;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -70,6 +72,20 @@ class MainActivity : AppCompatActivity() {
         var player_4_minus5: Button = findViewById<Button>(R.id.player_4_Minus5)
 
         var player_4_Health_Text: TextView = findViewById<TextView>(R.id.player_4_health_text)
+
+
+
+        var Player_5_Add: Button = findViewById<Button>(R.id.player_5_Add)
+
+        var player_5_Add5: Button = findViewById<Button>(R.id.player_5_Add5)
+
+        var player_5_minus1: Button = findViewById<Button>(R.id.player_5_Minus)
+
+        var player_5_minus5: Button = findViewById<Button>(R.id.player_5_Minus5)
+
+        var player_5_Health_text: TextView = findViewById<TextView>(R.id.player_5_Health)
+
+
 
 
 
@@ -154,7 +170,6 @@ class MainActivity : AppCompatActivity() {
                 player_2_lost.setTextColor(Color.RED)
                 player_2_Health_Text.setTextColor(Color.RED)
                 players_who_lost.setText("");
-                players_who_lost.setText("Player 2 Lost and is elimanted ");
                 players_who_lost.setTextColor(Color.RED);
                 player_2_minus5.isEnabled = false;
                 player_2_Minus1.isEnabled = false;
@@ -267,7 +282,51 @@ class MainActivity : AppCompatActivity() {
 
 
 
+        Player_5_Add.setOnClickListener(){
+            player_5_Health++;
+            player_5_Health_text.setText("Player 5s Health = $player_5_Health")
+        }
 
+        player_5_minus1.setOnClickListener(){
+            player_5_Health--;
+            if(player_5_Health <= 0){
+                //   player_3_text.setText("Player 3 Lost and is elimanted ")
+                //  player_3_text.setTextColor(Color.RED)
+                players_who_lost.setText("");
+                Player_5_Add.isEnabled = false;
+                player_5_Add5.isEnabled = false;
+                player_5_minus1.isEnabled = false;
+                player_5_minus5.isEnabled = false;
+            }
+            player_5_Health_text.setText("Player 4's Health = $player_5_Health")
+
+        }
+        player_5_Add5.setOnClickListener() {
+            player_5_Health += 5;
+            player_5_Health_text.setText("Player 5's Health = $player_5_Health")
+
+        }
+
+        player_5_minus5.setOnClickListener(){
+            player_5_Health -= 5;
+            if(player_5_Health <= 0){
+                players_who_lost.setText("");
+                players_who_lost.setTextColor(Color.RED)
+                player_2_lost.setText("")
+               player_5_Health_text.setText("Player 5 Lost and is elimanted")
+                players_who_lost.setText("")
+                players_who_lost.setText("Player 5 Lost and is elimanted")
+                player_5_Health_text.setTextColor(Color.RED)
+                //    player_3_text.setText("");
+                player_5_Health_text.setText("Elimaninted")
+                Player_5_Add.isEnabled = false;
+                player_5_Add5.isEnabled = false;
+                player_5_minus1.isEnabled = false;
+                player_5_minus5.isEnabled = false;
+            }
+            player_5_Health_text.setText("Player 5's Health = $player_5_Health")
+
+        }
 
 
 
